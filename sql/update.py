@@ -10,7 +10,7 @@ with sqlite3.connect("new.db") as connection:
     c.execute("DELETE FROM population WHERE city = 'Boston'")
 
     print ("\nNew DATA:\n")
-
+    #for result, it not necessarily set a outcome variable
     c.execute("SELECT * FROM population")
     rows = c.fetchall()
 
